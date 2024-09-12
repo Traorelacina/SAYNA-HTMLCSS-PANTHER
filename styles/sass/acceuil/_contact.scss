@@ -1,0 +1,51 @@
+.contact-container{
+    height: 100vh;
+    @include flex-center;
+    // display: none !important;
+    background: url(../../../asset/images/Accueil/Pantherhome7.png) center no-repeat;
+    .contact{
+        width: 70%;
+        background: linear-gradient(to bottom, $white , transparent 99.9% ); 
+        @include flex-center;
+        flex-direction: column;
+        border-radius: 150px;
+        color: #000;
+        p{
+            font-size:$cartell-text ;
+            text-align: center;
+        }
+        h1{
+            font-family: "cantarell";
+        }
+        input , textarea{
+            width: 300px;
+            height: 40px;
+            padding: 0 1rem;
+            border-radius: 20px;
+            background: transparent;
+            margin: 1rem 0;
+            border:1px solid #000;
+            &::placeholder{
+                color:$color6;
+            }
+        }
+        textarea{
+            height: 10rem;
+        }
+        button{
+            @include Bouton;
+            background: $color1;
+            border: none;
+            cursor: pointer;
+            &:hover{
+                box-shadow: 0 0 20px #000; 
+            }
+        }
+    }
+}
+@include md{
+    .contact{
+        width: 100% !important;
+        border-radius: 20px !important;
+    }
+}

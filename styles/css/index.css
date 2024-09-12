@@ -1,0 +1,751 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "beyno";
+  src: url(../../asset/font/BEYNO.ttf);
+}
+@font-face {
+  font-family: "cantarell";
+  src: url(../../asset/font/Cantarell-Regular.ttf);
+}
+@font-face {
+  font-family: "panther";
+  src: url(../../asset/font/PantheraRegular-MVZ9J.ttf);
+}
+@font-face {
+  font-family: "wakanda";
+  src: url(../../asset/font/WakandaForever-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../../asset/images/All/arrière_plan.png);
+  color: #FFF;
+  margin: 1rem 0 !important;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+@media (max-width: 789px) {
+  body {
+    margin: 1rem !important;
+  }
+}
+header {
+  padding: 2rem 0;
+  margin: 0 7rem;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between !important;
+}
+header nav img {
+  width: 6rem;
+}
+header nav ul {
+  list-style: none;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+header nav ul li {
+  font-family: "beyno";
+  font-weight: 200;
+  letter-spacing: 1px;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+header nav ul li:hover, header nav ul li:active {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+@media (max-width: 789px) {
+  header {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header nav {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  header ul {
+    width: 100% !important;
+  }
+}
+footer {
+  height: 100vh;
+  padding: 0 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+  background: url(../../../asset/images/All/back_footer.png) center no-repeat;
+  position: relative;
+}
+footer .footer-contenue {
+  display: grid;
+  height: 40vh;
+  grid-template-columns: 50% 50% 50%;
+  grid-template-rows: 75% 50%;
+  grid-gap: 20%;
+  grid-template-areas: "A B C" "A D D";
+}
+footer .footer-contenue h1 {
+  font-size: 16px;
+  letter-spacing: 10px;
+  font-family: "cantarell";
+  margin-bottom: 2rem;
+}
+footer .footer-contenue p {
+  font-size: 14px;
+  color: #FFF;
+  opacity: 0.8;
+  margin: 0;
+}
+footer .footer-contenue .logos {
+  grid-area: A;
+  position: relative;
+}
+footer .footer-contenue .logos img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+footer .footer-contenue .logos img:nth-child(1) {
+  width: 100%;
+}
+footer .footer-contenue .pages {
+  grid-area: B;
+}
+footer .footer-contenue .retrouver {
+  grid-area: C;
+}
+footer .footer-contenue .retrouver .reseaux {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .footer-contenue .droits {
+  grid-area: D;
+  font-family: "cantarell";
+  font-size: 10px;
+  font-weight: 200;
+  opacity: 0.7;
+  letter-spacing: 1.2px;
+}
+
+@media (max-width: 789px) {
+  footer {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  footer .footer-contenue {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
+.voir-plus {
+  font-family: "cantarell";
+  font-size: 10px;
+  text-decoration: underline;
+}
+
+h2 {
+  font-family: "beyno";
+  font-style: 32px;
+  font-weight: normal;
+  margin: 1rem 0;
+  color: #9E91B7;
+  opacity: 0.9;
+}
+
+p {
+  font-family: "cantarell";
+  font-size: 10px;
+  color: #9E91B7;
+  margin: 1rem 0;
+  text-align: justify;
+}
+
+main {
+  padding: 0 4rem;
+}
+
+.black-panther {
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-template-rows: auto;
+  grid-template-areas: "A B";
+  margin-bottom: 2rem;
+}
+.black-panther span {
+  grid-area: A;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem;
+}
+.black-panther span h1, .black-panther span h2, .black-panther span p, .black-panther span a {
+  margin: 10px 0;
+}
+.black-panther span h1 {
+  font-family: "panther", sans-serif;
+  font-size: 46px;
+  color: #9E91B7;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+.black-panther img {
+  grid-area: B;
+  width: 100%;
+}
+
+.autre-personnage {
+  background: #021740;
+  margin-bottom: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.autre-personnage .carte-personnage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+}
+.autre-personnage .carte-personnage img {
+  height: 100%;
+  transition: 0.5s ease-in-out;
+}
+.autre-personnage .carte-personnage img:hover {
+  transform: scale(1.1);
+}
+.autre-personnage .carte-personnage span {
+  margin: 1rem;
+}
+.autre-personnage .carte-personnage span p {
+  color: #FFF;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas: "A B";
+}
+.details .naissance {
+  grid-area: A;
+  margin: 0 2rem;
+}
+.details .naissance p {
+  color: #F2CEF2 !important;
+}
+.details .biographie-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+.details .biographie-container .rond-image {
+  width: 60%;
+}
+.details .biographie-container .biographie {
+  background: #FFF;
+  border-radius: 10px;
+  min-width: 300px;
+  width: 60%;
+  height: 75%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 40% auto auto auto auto;
+  grid-template-areas: "A" "C" "D";
+}
+.details .biographie-container .biographie .image {
+  width: 100%;
+  grid-area: A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(-100px);
+}
+.details .biographie-container .biographie .image img {
+  width: 300px;
+}
+.details .biographie-container .biographie .image h3 {
+  font-family: "cantarell";
+  font-size: 16px;
+  margin: 1rem 0;
+}
+.details .biographie-container .biographie .buton-container {
+  grid-area: C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details .biographie-container .biographie .buton-container button {
+  margin-left: 10px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-family: "cantarell";
+  font-size: 10px;
+  background: #3D2DA6;
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+}
+.details .biographie-container .biographie .buton-container button:active, .details .biographie-container .biographie .buton-container button:hover {
+  background: #07338C;
+}
+.details .biographie-container .biographie .liste-bio {
+  grid-area: D;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details .biographie-container .biographie .liste-bio ul {
+  list-style: none;
+  color: #021740;
+  font-family: "cantarell";
+  font-size: 12px;
+}
+.details .biographie-container .biographie .liste-bio ul li {
+  margin: 5px 0;
+}
+
+@media (max-width: 789px) {
+  main {
+    margin: 0;
+    padding: 0;
+  }
+  .black-panther {
+    display: flex !important;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .black-panther span {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .black-panther span h1, .black-panther span h2, .black-panther span p, .black-panther span a {
+    margin: 0px !important;
+  }
+  .black-panther span h1 {
+    text-align: center;
+  }
+  .black-panther span p {
+    width: 100%;
+  }
+  .autre-personnage {
+    width: 100% !important;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  .autre-personnage .carte-personnage {
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 1rem;
+  }
+  .autre-personnage .carte-personnage img {
+    width: 50% !important;
+  }
+  .details {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .details .naissance {
+    margin: 0 0 0 2rem;
+  }
+  .details .biographie {
+    width: 90% !important;
+  }
+}
+.main-wakanda {
+  height: 80vh;
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
+
+.wakanda-forever {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: url(../../../asset/images/Wakanda/Pantherwakanda1.png) center no-repeat;
+  background-size: 100%;
+}
+.wakanda-forever span {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem;
+}
+.wakanda-forever span h1, .wakanda-forever span h2, .wakanda-forever span p, .wakanda-forever span a {
+  margin: 10px 0;
+}
+.wakanda-forever span h1 {
+  font-family: "beyno", sans-serif;
+  font-size: 46px;
+  color: #9E91B7;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+.wakanda-forever span h2 {
+  font-family: "wakanda";
+  letter-spacing: 5px;
+  word-spacing: 10px;
+}
+.wakanda-forever span p {
+  width: 300px;
+  color: #FFF;
+  text-align: justify;
+}
+
+.details-container {
+  width: 80%;
+  padding: 4rem 0;
+  margin: 0 auto;
+}
+
+.wakanda-details {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-template-rows: auto;
+  grid-template-areas: "A B";
+  justify-content: center;
+  grid-gap: 10%;
+  position: relative;
+}
+.wakanda-details .bg-container {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+}
+.wakanda-details .bg-container img {
+  width: 100%;
+  opacity: 0.2;
+}
+.wakanda-details p {
+  color: #FFF;
+}
+.wakanda-details .details-left {
+  grid-area: A;
+}
+.wakanda-details .details-left .lien-container {
+  width: 100%;
+  height: 200px;
+  background: #3D2DA6;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  line-height: 2rem;
+  font-family: "cantarell";
+  font-weight: 200 !important;
+}
+.wakanda-details .details-right {
+  grid-area: B;
+}
+.wakanda-details .details-right div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wakanda-details .details-right div img {
+  width: 75%;
+}
+
+@media (max-width: 789px) {
+  .wakanda-forever {
+    background-size: 300%;
+  }
+  .wakanda-details {
+    display: flex !important;
+    flex-direction: column;
+  }
+}
+.main-enigne {
+  margin: 0;
+  padding: 0;
+}
+
+.param-rond {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  position: relative;
+}
+.param-rond strong {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.param-rond p {
+  color: #FFF;
+  font-weight: normal;
+  position: relative;
+}
+.param-rond img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 170%;
+  z-index: -1;
+}
+
+.defi-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  background: url(../../../asset/images/Enigme/Pantherenigme1.png) center no-repeat;
+  background-size: 75%;
+  background-position-x: 10%;
+}
+.defi-container .defi {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.defi-container .defi .defi-contenue {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.defi-container .defi .defi-contenue h1 {
+  font-family: "beyno";
+  font-size: 46px;
+  font-weight: normal;
+  color: #9E91B7;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.languages {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.languages .language-contenue {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.languages .language-contenue .citations {
+  height: 25%;
+}
+.languages .language-contenue .citations h2 {
+  font-size: 32px !important;
+  font-family: "wakanda";
+  letter-spacing: 3px;
+  word-spacing: 1rem;
+}
+
+.traduction-container {
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "A B" "C B";
+}
+.traduction-container .traduction {
+  grid-area: A;
+}
+.traduction-container .traduction h3 {
+  font-family: "cantarell";
+  font-size: 10px;
+  font-weight: normal;
+}
+.traduction-container .traduction p {
+  font-size: 14px;
+  color: #FFF;
+}
+.traduction-container .traduction p strong {
+  font-family: "wakanda";
+}
+.traduction-container form {
+  grid-area: C;
+  display: flex;
+  flex-direction: column;
+}
+.traduction-container form label {
+  font-family: "cantarell";
+  font-size: 10px;
+  font-weight: normal;
+}
+.traduction-container form input {
+  width: 300px;
+  padding: 1rem;
+  color: #FFF;
+  border-radius: 20px;
+  background: transparent;
+  margin: 1rem 0;
+  border: 1px solid #DF99F2;
+}
+.traduction-container form .button-contenaire {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.traduction-container form button {
+  width: 174px;
+  height: 54px;
+  border-radius: 38px;
+  height: 40px;
+  width: 100px;
+  background: #F2CEF2;
+  border: none;
+  cursor: pointer;
+  margin: 2rem auto;
+}
+.traduction-container form button:hover {
+  box-shadow: 0 0 20px #000;
+}
+.traduction-container .param {
+  grid-area: B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 789px) {
+  .param-rond {
+    width: 75%;
+  }
+  .param-rond img {
+    width: 120%;
+  }
+  .defi-container {
+    justify-content: center;
+    background-size: 150%;
+    background-position-y: -100px;
+    margin: 0;
+  }
+  .defi-container .defi {
+    width: 100%;
+  }
+  .languages {
+    height: auto;
+    min-height: 120vh;
+    margin: 0;
+    padding: 0;
+  }
+  .languages .language-contenue {
+    width: 100%;
+  }
+  .languages .language-contenue .citations {
+    width: 100% !important;
+    height: 220px;
+    text-align: center;
+  }
+  .traduction-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.contact-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../../asset/images/Accueil/Pantherhome7.png) center no-repeat;
+}
+.contact-container .contact {
+  width: 70%;
+  background: linear-gradient(to bottom, #FFF, transparent 99.9%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 150px;
+  color: #000;
+}
+.contact-container .contact p {
+  font-size: 16px;
+  text-align: center;
+}
+.contact-container .contact h1 {
+  font-family: "cantarell";
+}
+.contact-container .contact input, .contact-container .contact textarea {
+  width: 300px;
+  height: 40px;
+  padding: 0 1rem;
+  border-radius: 20px;
+  background: transparent;
+  margin: 1rem 0;
+  border: 1px solid #000;
+}
+.contact-container .contact input::placeholder, .contact-container .contact textarea::placeholder {
+  color: #021740;
+}
+.contact-container .contact textarea {
+  height: 10rem;
+}
+.contact-container .contact button {
+  width: 174px;
+  height: 54px;
+  border-radius: 38px;
+  background: #F2CEF2;
+  border: none;
+  cursor: pointer;
+}
+.contact-container .contact button:hover {
+  box-shadow: 0 0 20px #000;
+}
+
+@media (max-width: 789px) {
+  .contact {
+    width: 100% !important;
+    border-radius: 20px !important;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,78 @@
+footer{
+    height: 100vh;
+    padding: 0 7rem ;
+    @include flex-center;
+    justify-content: start;
+    background: url(../../../asset/images/All/back_footer.png) center no-repeat;
+    position: relative;
+    // display: none !important;
+    .footer-contenue{  
+        display: grid;
+        height: 40vh;
+        grid-template-columns: 50% 50% 50%;
+        grid-template-rows: 75% 50%;
+        grid-gap: 20%;
+        grid-template-areas: 
+        "A B C"
+        "A D D";
+        h1{
+            font-size: $cartell-text;
+            letter-spacing: 10px;
+            font-family: "cantarell";
+            margin-bottom: 2rem;
+        }
+        p{
+            font-size: $cartell-citation;
+            color: $white;
+            opacity: 0.8;
+            margin: 0;
+        }
+        .logos{
+            grid-area: A;
+            position :relative;
+            img{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);    
+                &:nth-child(1){
+                    width: 100%;
+                }
+            }
+        }
+        .pages{
+            grid-area: B;
+        }
+        .retrouver{
+            grid-area: C;
+            .reseaux{
+                width: 100%;
+                @include flex-center;
+                justify-content: space-around;
+            }
+        }
+        .droits{
+            grid-area: D;
+            font-family: "cantarell";
+            font-size: $cartell-footer;
+            font-weight: 200;
+            opacity: 0.7;
+            letter-spacing: 1.2px;
+        }
+    }
+}
+@include md{
+    footer{
+        padding: 0;
+        width: 100%;
+        // display: none;
+        text-align: center;
+       .footer-contenue{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+       }
+    }
+}

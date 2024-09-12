@@ -1,0 +1,17 @@
+@mixin input {
+    width: 520px;
+    height: 56px;
+    border-radius: $radius;
+}
+@mixin Bouton {
+    width: 174px;
+    height: 54px;
+    border-radius: 38px;
+
+}
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

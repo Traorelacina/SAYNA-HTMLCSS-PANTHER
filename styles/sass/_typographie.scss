@@ -1,0 +1,34 @@
+//COULEUR
+$white :  #FFF;
+$color1 : #F2CEF2;
+$color2 : #9E91B7;
+$color3 : #DF99F2;
+$color4 : #3D2DA6;
+$color5 : #07338C;
+$color6 : #021740;
+
+$panthera-h1 : 46px;
+$beyno-h2 : 32px;
+$wakanda-h2 : 43px;
+$cartell-text : 16px;
+$cartell-citation : 14px;
+$cartell-footer : 10px;
+
+$radius : 38%;
+
+@font-face {
+    font-family: "beyno";
+    src: url(../../asset/font/BEYNO.ttf);
+}
+@font-face {
+    font-family: "cantarell";
+    src: url(../../asset/font/Cantarell-Regular.ttf);
+}
+@font-face {
+    font-family: "panther";
+    src: url(../../asset/font/PantheraRegular-MVZ9J.ttf);
+}
+@font-face{
+    font-family: "wakanda";
+    src: url(../../asset/font/WakandaForever-Regular.ttf);
+}
